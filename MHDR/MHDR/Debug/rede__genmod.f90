@@ -1,7 +1,0 @@
-        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 15 16:11:58 2019
-        MODULE REDE__genmod
-          INTERFACE 
-            SUBROUTINE REDE
-            END SUBROUTINE REDE
-          END INTERFACE 
-        END MODULE REDE__genmod

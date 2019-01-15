@@ -9,8 +9,8 @@ CHARACTER CDATAL(NT)*16
 
 !OPEN(FILSSUP, FILE='C:\Users\Garofolo\entrada85-90\escoamento-superficial_1985-1990.bin', status='old',form='unformatted',recordtype='STREAM')
 !OPEN(FILSSUB, FILE='C:\Users\Garofolo\entrada85-90\escoamento-subterraneo_1985-1990.bin', status='old',form='unformatted',recordtype='STREAM')
-OPEN(FILSSUP, FILE='F:\DADOS-MAC\Entradas-MHDRouting\IBGE+CARRIELO_OTIM_2033-2057\escoamento-superficial_1961-2005.bin', status='old',form='unformatted',recordtype='STREAM')
-OPEN(FILSSUB, FILE='F:\DADOS-MAC\Entradas-MHDRouting\IBGE+CARRIELO_OTIM_2033-2057\escoamento-subterraneo_1961-2005.bin', status='old',form='unformatted',recordtype='STREAM')
+OPEN(FILSSUP, FILE='F:\DADOS-MAC\Entradas-MHDRouting\IBGE+CARRIELO_OTIM_2033-2057\escoamento-superficial_RCP45_otim_2033-2057.bin', status='old',form='unformatted',recordtype='STREAM')
+OPEN(FILSSUB, FILE='F:\DADOS-MAC\Entradas-MHDRouting\IBGE+CARRIELO_OTIM_2033-2057\escoamento-subterraneo_RCP45_otim_2033-2057.bin', status='old',form='unformatted',recordtype='STREAM')
 
 IF(NSTEP > 0) THEN
     DO ITAUX=1,NSTEP
