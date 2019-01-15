@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{64DBCF9E-FF43-45DA-AF78-9742AA92F578}">
+	<Platforms>
+		<Platform Name="Win32"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" Interfaces="true" WarnInterfaces="true" Traceback="true" BoundsCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<File RelativePath="..\..\MHD-Routing-Intel\Alloca_Vars.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\Atualiza.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\BalancoHidrico.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\Caldat.F90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\Caldat_366.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\Celula.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\Dominio.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\FObj.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\InterpMusk.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\Julday.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\Julday_366.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\LeBacia.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\LeCell.F90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\LeEsc.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\LeFix.F90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\LeQobs.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\MHD.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\Modelo.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\Musk.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\Musk_NL.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\Parcel.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\Parcunge.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\Rede.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\RedeIni.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\Simula.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\Sort.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\Vars_Calib.f90"/>
+		<File RelativePath="..\..\MHD-Routing-Intel\Vars_main.f90"/></Filter></Files>
+	<Globals/></VisualStudioProject>

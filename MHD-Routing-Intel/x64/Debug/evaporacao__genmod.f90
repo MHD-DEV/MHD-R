@@ -1,9 +1,0 @@
-        !COMPILER-GENERATED INTERFACE MODULE: Wed Aug 17 09:57:18 2016
-        MODULE EVAPORACAO__genmod
-          INTERFACE 
-            SUBROUTINE EVAPORACAO(IC,IU)
-              INTEGER(KIND=4) :: IC
-              INTEGER(KIND=4) :: IU
-            END SUBROUTINE EVAPORACAO
-          END INTERFACE 
-        END MODULE EVAPORACAO__genmod

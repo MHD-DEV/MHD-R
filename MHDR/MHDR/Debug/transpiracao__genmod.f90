@@ -1,0 +1,10 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Tue Jan 15 16:11:49 2019
+        MODULE TRANSPIRACAO__genmod
+          INTERFACE 
+            SUBROUTINE TRANSPIRACAO(IC,IU,IB)
+              INTEGER(KIND=4) :: IC
+              INTEGER(KIND=4) :: IU
+              INTEGER(KIND=4) :: IB
+            END SUBROUTINE TRANSPIRACAO
+          END INTERFACE 
+        END MODULE TRANSPIRACAO__genmod
