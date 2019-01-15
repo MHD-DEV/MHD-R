@@ -1,0 +1,7 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Thu Aug 25 16:43:52 2016
+        MODULE LEFIX__genmod
+          INTERFACE 
+            SUBROUTINE LEFIX
+            END SUBROUTINE LEFIX
+          END INTERFACE 
+        END MODULE LEFIX__genmod

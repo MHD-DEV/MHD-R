@@ -1,0 +1,7 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Wed Aug 17 09:57:17 2016
+        MODULE QQMET__genmod
+          INTERFACE 
+            SUBROUTINE QQMET
+            END SUBROUTINE QQMET
+          END INTERFACE 
+        END MODULE QQMET__genmod
