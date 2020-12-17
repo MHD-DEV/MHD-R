@@ -22,11 +22,11 @@ DO ITAUX=1,NT
 ENDDO
 
 ! GAROFOLO
-OPEN(15000, FILE=trim(dir_dados)//'Saida/escoamento_Eta.txt', status='unknown',form='formatted')
-DO ITAUX=1,NT
-    WRITE(15000,'(2F15.10)')DSUPALL(1000,ITAUX),DSUBALL(1000,ITAUX)
-ENDDO
-close(15000)
+!OPEN(15000, FILE=trim(dir_dados)//'Saida/escoamento_Eta.txt', status='unknown',form='formatted')
+!DO ITAUX=1,NT
+!    WRITE(15000,'(2F15.10)')DSUPALL(1000,ITAUX),DSUBALL(1000,ITAUX)
+!ENDDO
+!close(15000)
 
 CLOSE(FILSSUB)
 CLOSE(FILSSUP)
