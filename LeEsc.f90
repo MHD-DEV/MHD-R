@@ -5,8 +5,9 @@ IMPLICIT NONE
 INTEGER ITAUX,IC
 REAL LIXO(NC)
 
-OPEN(FILSSUP, FILE='F:\DADOS-MAC\Entradas-MHDRouting\IBGE+CARRIELO_OTIM_2033-2057\escoamento-superficial_RCP45_otim_2033-2057.bin', status='old',form='unformatted',recordtype='STREAM')
-OPEN(FILSSUB, FILE='F:\DADOS-MAC\Entradas-MHDRouting\IBGE+CARRIELO_OTIM_2033-2057\escoamento-subterraneo_RCP45_otim_2033-2057.bin', status='old',form='unformatted',recordtype='STREAM')
+OPEN(FILSSUB, FILE='/Users/hidrologia/Desktop/Garofolo/UFF/Entradas-MHDRouting/IBGE+CARRIELO_PRESENTE/escoamento-subterraneo_presente_1970-2005.bin', status='old',form='unformatted',recordtype='STREAM')
+
+OPEN(FILSSUP, FILE='/Users/hidrologia/Desktop/Garofolo/UFF/Entradas-MHDRouting/IBGE+CARRIELO_PRESENTE/escoamento-superficial_presente_1970-2005.bin', status='old',form='unformatted',recordtype='STREAM')
 
 IF(NSTEP > 0) THEN
     DO ITAUX=1,NSTEP
