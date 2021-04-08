@@ -33,6 +33,7 @@ do ano = IANOI, IANOFIN
                 DO k=1, NHIDG
                     qdiaria(k) =  qdiaria(k) + QRG(k,it)
                     qanual(k) = qanual(k) + QRG(k,it)
+                    qmensal(k,mes) = qmensal(k,mes) + QRG(k,it)
                 ENDDO
             enddo
 
@@ -50,40 +51,11 @@ enddo
 close(51)
 close(52)
 
-!open(51, FILE=DIR_DADOS//'Saida/VAZAO_DIARIA.HIG', status='unknown')
-!open(52, FILE=DIR_DADOS//'Saida/VAZAO_ANUAL.HIG', status='unknown')
-!do ano=IANOI+3, IANOFIN
-!    iaux=iaux+1
-!    qanual=0.
-!    do mes=1, 12
-!!        diasmes(2)=28
-!!        if(mes==2 .and. mod(ano,4)==0) diasmes(2)=29
-!        do dia=1, diasmes(mes)
-!            qdiaria=0.
-!            do h=1,8
-!                it=it+1
-!                do k=1, NHIDG
-!                        qdiaria(k)=qdiaria(k) + QRG(k,it)
-!                        qmensal(k,mes)=qmensal(k,mes) + QRG(k,it)/real(diasmes(mes))/8
-!                        qanual(k)=qanual(k) + qdiaria(k)/365
-!                    enddo !subbacias
-!                    write(51,'(2(I2.2,A1),I4,<NHIDG>F15.3)') dia,'/',mes,'/',ano,(qdiaria(k)/8,k=1,NHIDG)
-!            enddo !horas
-!        enddo !dia
-!    enddo !mes
-!    write(52, '(I4,<NHIDG>F15.3)') ano,(qanual(k),k=1,NHIDG)
-!enddo !ano
-!
-!close(51)
-!close(52)
-!
-!open(50, FILE=DIR_DADOS//'Saida/VAZAO_MENSAL.HIG', status='unknown')
-!do mes = 1, 12
-!        write(50,'(I2.2,<NHIDG>F12.2)') mes,(qmensal(k,mes)/(IANOFIN-IANOI-1), k=1, NHIDG)
-!enddo
-!
-!close(50)
-!deallocate(qmensal)
+open(50, FILE=DIR_DADOS//'Saida/VAZAO_MENSAL.HIG', status='unknown',decimal='COMMA')
+do mes = 1, 12
+        write(50,'(I2.2,<NHIDG>F15.3)') mes,(qmensal(k,mes)/iauxm(mes), k=1, NHIDG)
+enddo
+close(50)
 
 return
-End
+END
