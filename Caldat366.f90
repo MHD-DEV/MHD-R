@@ -1,4 +1,4 @@
-SUBROUTINE caldat(julian,mm,id,iyyy)
+SUBROUTINE caldat366(julian,mm,id,iyyy)
 !subrotina que converte dia juliano em dia/mes/ano
 implicit none
 INTEGER id,iyyy,julian,mm,IGREG

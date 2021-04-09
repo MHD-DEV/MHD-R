@@ -1,0 +1,6 @@
+    FUNCTION JULDAY360(m,d,y)
+	  !DETERMINA O DIA DO CALENDÁRIO JULIANO CORRESPONDENTE AO DIA, MÊS E ANO DADOS
+     INTEGER d,y,m
+	  julday=(y-1)*360+(m-1)*30+d
+     return
+    END
