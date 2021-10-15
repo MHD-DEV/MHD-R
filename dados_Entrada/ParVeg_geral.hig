@@ -1,0 +1,209 @@
+Parametros de vegetacao
+Indicadores de estresse do modelo de Jarvis
+       0.50    ! OMEGAC - VALOR CRITICO DO FATOR DE PONDERACAO DE ESTRESSE
+       6.0    ! FR - FATOR DE DISTRIBUICAO DE RAIZES
+         16    ! numero de tipos de vegetacao funcional
+    albedo fonte: culf et al. 1996
+Veg     jan     fev     mar     abr     mai     jun     jul     ago     set     out     nov     dez
+  1   0.127   0.122   0.122   0.120   0.125   0.126   0.131   0.137   0.139   0.135   0.134   0.135  ! ÁRVORES LATOFOLIADAS PERENES (FLORESTAS TROPICAIS) de culf et al.
+  2   0.135   0.135   0.137   0.140   0.149   0.154   0.154   0.153   0.147   0.138   0.136   0.135  ! ÁRVORES LATIFOLIASDAS DECIDUAS DO SIB
+  3   0.115   0.116   0.117   0.119   0.121   0.122   0.121   0.119   0.118   0.116   0.116   0.116  ! ÁRVORES LATIFOLIADAS /ACICULADAS (FLORESTAS MISTA) DO SIB
+  4   0.103   0.104   0.105   0.107   0.109   0.110   0.110   0.108   0.106   0.104   0.104   0.103  ! ÁRVORES ACICULADAS DECÍDUAS DO SIB
+  5     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0  ! ÁRVORES ACICULADAS PERENES
+  6    0.13    0.13    0.14    0.15    0.16    0.16    0.17    0.17    0.16    0.15    0.14    0.13  ! ÁRVORES LATIFOLIADAS COM COBERTURA ARBUSTIVA/HERBÁCEA (SAVANA) DE HOFMANN
+  7   0.157   0.189   0.197   0.202   0.199   0.203   0.201   0.196   0.178   0.171   0.195   0.196  ! GRAMÍNEAS E HERBÁCEAS DE WRIGHT
+  8   0.149   0.148   0.148   0.148   0.148   0.148   0.148   0.148   0.148   0.148   0.149   0.149  ! ARBUSTOS LATOFOLIADOS COM COBERTURA HERBÁCEA PERENE do sib
+  9   0.320   0.318   0.314   0.313   0.312   0.310   0.309   0.310   0.311   0.318   0.313   0.320  ! ARBUSTOS LATIFOLIAOS COM SOLO EXPOSTO DO SIB
+ 10   0.141   0.142   0.143   0.146   0.146   0.146   0.146   0.146   0.146   0.145   0.145   0.144  ! ÁRVORES ANÃAS E ARBUSTOS COM COBERTURA HERBÁCEAS (TUNDRA) DO SIB
+ 11   0.325   0.324   0.325   0.325   0.325   0.325   0.324   0.325   0.324   0.325   0.325   0.325  ! SOLO EXPOSTO
+ 12   0.130   0.143   0.156   0.153   0.127   0.127   0.125   0.125   0.125   0.125   0.125   0.125  !  12 CULTIVOS (Sib usando parametros de sampaio)
+ 13   0.145   0.146   0.147   0.148   0.149    0.15    0.16   0.175    0.17    0.15    0.14   0.142  ! eucalipto Tatsch 2006.
+ 14   0.194   0.185   0.186   0.187   0.186   0.188   0.185   0.182   0.186   0.191   0.199   0.195  ! Mata atlantica (Freitas 2012)
+ 15   0.130   0.143   0.156   0.153   0.127   0.127   0.125   0.125   0.125   0.125   0.125   0.125  !  12 CULTIVOS (Sib) 
+ 16    0.05    0.05    0.05    0.05    0.05    0.05    0.05    0.05    0.05    0.05    0.05    0.05  ! agua/gelo  
+       IAF  !indice de area foliar  
+uso     jan     fev     mar     abr     mai     jun     jul     ago     set     out     nov     dez
+  1   5.014   5.014   5.014   5.014   5.014   5.014   5.014   5.014   5.014   5.014   5.014   5.014
+  2   5.380   4.880   3.780   1.630   0.650   0.390   0.390   0.390   0.650   1.580   3.380   5.080
+  3   6.456   6.456   5.756   4.556   3.256   3.256   3.456   3.556   3.956   4.856   5.456   6.156
+  4   7.870   7.670   7.570   7.370   6.870   6.570   6.570   6.870   7.370   7.570   7.770   8.070
+  5   4.304   2.904   2.004   1.304   0.804   0.504   0.404   0.404   0.404   0.904   1.604   2.304
+  6   2.606   5.206   4.556   3.816   2.806   1.866   1.766   1.546   1.416   1.216   1.186   1.416
+  7   4.304   3.804   1.804   1.104   0.904   0.804   0.704   0.804   0.904   1.004   1.604   2.000
+  8   0.258   0.808   1.508   1.148   0.748   0.578   0.578   0.578   0.448   0.288   0.258   0.258
+  9   0.176   0.276   0.476   0.576   0.676   0.876   1.076   0.976   0.776   0.276   0.576   0.176
+ 10   1.738   1.938   1.478   0.378   0.378   0.378   0.378   0.378   0.378   0.378   0.378   0.508
+ 11   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000
+ 12  1.1300  2.5000  5.9000  3.0000  0.1300  0.1300  0.1300  0.1300  0.1300  0.1300  0.1300  0.1300 ! soja sampaio
+ 13    2.50    2.50    2.50    2.50    2.50    2.50    2.50    2.50    2.50    2.50    2.50    2.50 ! eucalipto, almeida e soares 2002
+ 14     5.0     4.0     4.0     4.0     3.5     3.3     3.1     2.8     3.5     3.9     4.2     4.5 ! Mata atlantica adaptado de Avila 2011
+ 15   4.782   4.227   2.004   1.227   1.004   0.893   0.782   0.893   1.004   1.116   1.782   3.671 !  12 CULTIVOS (mosaic)
+ 16    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00    0.00 ! agua
+         Z !altura da VEGETACAO
+uso     jan     fev     mar     abr     mai     jun     jul     ago     set     out     nov     dez
+  1  35.000  35.000  35.000  35.000  35.000  35.000  35.000  35.000  35.000  35.000  35.000  35.000
+  2  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000
+  3  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000  20.000
+  4  17.000  17.000  17.000  17.000  17.000  17.000  17.000  17.000  17.000  17.000  17.000  17.000
+  5  14.000  14.000  14.000  14.000  14.000  14.000  14.000  14.000  14.000  14.000  14.000  14.000
+  6  18.000  18.000  18.000  18.000  18.000  18.000  18.000  18.000  18.000  18.000  18.000  18.000
+  7   0.600   0.600   0.600   0.600   0.600   0.600   0.600   0.600   0.600   0.600   0.600   0.300
+  8   5.000   5.000   5.000   5.000   5.000   5.000   5.000   5.000   5.000   5.000   5.000   5.000
+  9   0.500   0.500   0.500   0.500   0.500   0.500   0.500   0.500   0.500   0.500   0.500   0.500
+ 10   0.600   0.600   0.600   0.600   0.600   0.600   0.600   0.600   0.600   0.600   0.600   0.600
+ 11   0.100   0.100   0.100   0.100   0.100   0.100   0.100   0.100   0.100   0.100   0.100   0.100
+ 12   0.520   0.501   0.450   0.297   0.175   0.145   0.145   0.145   0.175   0.287   0.430   0.509 ! soja sampaio
+ 13  22.000  22.000  22.000  22.000  22.000  22.000  22.000  22.000  22.000  22.000  22.000  22.000 ! eucalipto, macedo et al. 2013
+ 14  18.000  18.000  18.000  18.000  18.000  18.000  18.000  18.000  18.000  18.000  18.000  18.000 ! mata atlantica freitas 2012
+ 15  0.4875  0.4695  0.3975   0.366  0.3495  0.3405   0.327  0.3405  0.3495  0.3585    0.39  0.4485 ! mosaic
+ 16    0.01    0.01    0.01    0.01    0.01    0.01    0.01    0.01    0.01    0.01    0.01    0.01
+COVER - Cobertura da vegetacao Fonte: Wright et al. 1996, Sampaio et al para cerrado e pastagem E SOJA
+uso     jan     fev     mar     abr     mai     jun     jul     ago     set     out     nov     dez
+  1   0.980   0.980   0.980   0.980   0.980   0.980   0.980   0.980   0.980   0.980   0.980   0.980
+  2   0.750   0.750   0.750   0.750   0.750   0.750   0.750   0.750   0.750   0.750   0.750   0.750
+  3   0.750   0.750   0.750   0.750   0.750   0.750   0.750   0.750   0.750   0.750   0.750   0.750
+  4   0.750   0.750   0.750   0.750   0.750   0.750   0.750   0.750   0.750   0.750   0.750   0.750
+  5   0.500   0.500   0.500   0.500   0.500   0.500   0.500   0.500   0.500   0.500   0.500   0.500
+  6   0.830   0.990   0.990   0.970   0.940   0.860   0.830   0.800   0.780   0.770   0.740   0.780
+  7   0.740   0.820   0.900   0.900   0.820   0.740   0.660   0.580   0.500   0.500   0.580   0.660
+  8   0.100   0.100   0.100   0.100   0.100   0.100   0.100   0.100   0.100   0.100   0.100   0.100
+  9   0.100   0.100   0.100   0.100   0.100   0.100   0.100   0.100   0.100   0.100   0.100   0.100
+ 10   0.300   0.300   0.300   0.300   0.300   0.300   0.300   0.300   0.300   0.300   0.300   0.300
+ 11 0.00001 0.00001 0.00001 0.00001 0.00001 0.00001 0.00001 0.00001 0.00001 0.00001 0.00001 0.00001
+ 12   0.300   0.600   0.900   0.800   0.650   0.550   0.000   0.000   0.000   0.000   0.010   0.100
+ 13   0.720   0.720   0.720   0.720   0.720   0.720   0.720   0.720   0.720   0.720   0.720   0.720  ! eucalipto, macedo et al. 2013 
+ 14   0.810   0.810   0.810   0.810   0.810   0.810   0.810   0.810   0.810   0.810   0.810   0.810  ! Eta (região serra da bocaia)
+ 15   0.835   0.759   0.452   0.345   0.315   0.299   0.284   0.299   0.315   0.330   0.422   0.682  ! mosaic
+ 16     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0  ! agua
+PR Profundidade radicular (m) do SiB exceto cerrado
+uso     jan     fev     mar     abr     mai     jun     jul     ago     set     out     nov     dez
+  1     4.0     4.0     4.0     4.0     4.0     4.0     4.0     4.0     4.0     4.0     4.0     4.0  ! ÁRVORES LATOFOLIADAS PERENES (FLORESTAS TROPICAIS)
+  2     2.0     2.0     2.0     2.0     2.0     2.0     2.0     2.0     2.0     2.0     2.0     2.0  ! ÁRVORES LATIFOLIASDAS DECIDUAS
+  3     2.0     2.0     2.0     2.0     2.0     2.0     2.0     2.0     2.0     2.0     2.0     2.0  ! ÁRVORES LATIFOLIADAS /ACICULADAS (FLORESTAS MISTA)
+  4     2.0     2.0     2.0     2.0     2.0     2.0     2.0     2.0     2.0     2.0     2.0     2.0  ! ÁRVORES ACICULADAS DECÍDUAS
+  5     2.0     2.0     2.0     2.0     2.0     2.0     2.0     2.0     2.0     2.0     2.0     2.0  ! ÁRVORES ACICULADAS PERENES
+  6    10.0    10.0    10.0    10.0    10.0    10.0    10.0    10.0    10.0    10.0    10.0    10.0  ! ÁRVORES LATIFOLIADAS COM COBERTURA ARBUSTIVA/HERBÁCEA (SAVANA)
+  7     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5  ! GRAMÍNEAS E HERBÁCEAS
+  8     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5  ! ARBUSTOS LATOFOLIADOS COM COBERTURA HERBÁCEA PERENE
+  9     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5  ! ARBUSTOS LATIFOLIAOS COM SOLO EXPOSTO
+ 10    1.89    1.89    1.89    1.89    1.89    1.89    1.89    1.89    1.89    1.89    1.89    1.89  ! ÁRVORES ANÃAS E ARBUSTOS COM COBERTURA HERBÁCEAS (TUNDRA)
+ 11     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5  ! SOLO EXPOSTO
+ 12     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5  !  12 CULTIVOS (SOJA USANDO TABELA FAO33) 
+ 13     2.5     2.5     2.5     2.5     2.5     2.5     2.5     2.5     2.5     2.5     2.5     2.5  ! eucalipto, almeida et al. 2013
+ 14     3.0     3.0     3.0     3.0     3.0     3.0     3.0     3.0     3.0     3.0     3.0     3.0  ! mata atlantica
+ 15     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5     1.5  ! cultivos MOSAIC
+ 16     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0  ! agua
+DVEG - plano de deslocamento zero (m)
+uso     jan     fev     mar     abr     mai     jun     jul     ago     set     out     nov     dez
+  1  27.373  27.373  27.373  27.373  27.373  27.373  27.373  27.373  27.373  27.373  27.373  27.373
+  2  16.663  16.601  16.413  15.727  14.619  13.664  13.664  13.664  14.619  15.697  16.329  16.623
+  3  18.354  18.354  18.317  18.236  18.109  18.109  18.135  18.147  18.191  18.259  18.300  18.339
+  4  13.910  13.889  13.879  13.857  13.800  13.764  13.764  13.800  13.857  13.879  13.899  13.929
+  5  10.920  10.680  10.445  10.164   9.814   9.417   9.193   9.193   9.193   9.903  10.300  10.535
+  6  14.253  14.597  14.522  14.430  14.220  13.908  13.908  13.761  13.671  13.445  13.445  13.671
+  7   0.325   0.313   0.265   0.244   0.233   0.227   0.219   0.227   0.233   0.239   0.261   0.283
+  8   2.391   2.975   3.138   3.062   2.907   2.813   2.813   2.813   2.662   2.391   2.391   2.391
+  9   0.051   0.062   0.095   0.110   0.123   0.145   0.164   0.155   0.134   0.062   0.110   0.051
+ 10   0.215   0.229   0.200   0.106   0.106   0.106   0.106   0.106   0.106   0.106   0.106   0.123
+ 11 0.00006 0.00006 0.00006 0.00006 0.00006 0.00006 0.00006 0.00006 0.00006 0.00006 0.00006 0.00006
+ 12    0.10    0.15    0.30    0.30    0.20    0.10    0.01    0.01    0.01    0.01    0.01    0.01  ! soja sampaio
+ 13   14.52   14.52   14.52   14.52   14.52   14.52   14.52   14.52   14.52   14.52   14.52   14.52  ! eucalipto, 0.66 hc carneiro et al, 2008
+ 14    8.28    8.28    8.28    8.28    8.28    8.28    8.28    8.28    8.28    8.28    8.28    8.28  ! mata atlantica d = 0.46*altura da veg
+ 15   0.325   0.313   0.265   0.244   0.233   0.227   0.218   0.227   0.233   0.239    0.26   0.299  ! CULTIVOS mosaic
+ 16     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0     0.0  ! AGUA
+   z0 - rugosidade (m)
+uso     jan     fev     mar     abr     mai     jun     jul     ago     set     out     nov     dez
+  1   2.653   2.653   2.653   2.653   2.653   2.653   2.653   2.653   2.653   2.653   2.653   2.653
+  2   1.042   1.038   1.037   0.917   0.666   0.520   0.520   0.520   0.666   0.911   1.031   1.044
+  3   0.550   0.550   0.556   0.569   0.573   0.573   0.571   0.570   0.566   0.565   0.559   0.552
+  4   1.073   1.079   1.082   1.088   1.103   1.112   1.112   1.103   1.088   1.082   1.076   1.068
+  5   0.997   1.011   0.997   0.939   0.835   0.705   0.641   0.641   0.641   0.863   0.973   1.006
+  6   0.927   0.972   0.966   0.956   0.920   0.843   0.843   0.809   0.788   0.728   0.728   0.788
+  7   0.076   0.077   0.078   0.078   0.078   0.078   0.078   0.078   0.078   0.078   0.078   0.045
+  8   0.200   0.267   0.292   0.280   0.258   0.245   0.245   0.245   0.227   0.200   0.200   0.200
+  9   0.063   0.064   0.064   0.065   0.065   0.065   0.066   0.065   0.065   0.064   0.065   0.063
+ 10   0.078   0.078   0.077   0.075   0.075   0.075   0.075   0.075   0.075   0.075   0.075   0.076
+ 11   0.011   0.011   0.011   0.011   0.011   0.011   0.011   0.011   0.011   0.011   0.011   0.011
+ 12   0.020   0.020   0.040   0.030   0.020   0.011   0.011   0.011   0.011   0.011   0.011   0.011 ! soja sampaio
+ 13   2.706   2.706   2.706   2.706   2.706   2.706   2.706   2.706   2.706   2.706   2.706   2.706 ! eucalipto, 0.123 hc carneiro et al. 2008
+ 14     1.8     1.8     1.8     1.8     1.8     1.8     1.8     1.8     1.8     1.8     1.8     1.8 ! mata altlantica z0 = 0.1 *altura da veg
+ 15  0.0759  0.0766  0.0778  0.0779  0.0778  0.0778  0.0777  0.0778  0.0778  0.0779  0.0778  0.0771 ! CULTIVOS mosaic
+ 16  0.0002  0.0002  0.0002  0.0002  0.0002  0.0002  0.0002  0.0002  0.0002  0.0002  0.0002  0.0002 ! AGUA
+resistencia superficial (s/m) ajustadao a bacia do velhas
+  1   100.0   ! BROADLEAF EVERGREEN TREES
+  2   100.0   ! BROADLEAF DECIDUOUS TREES
+  3   100.0   ! BROADLEAF AND NEEDLEAF TREES
+  4   100.0   ! NEEDLEAF EVERGREEN TREES
+  5   100.0   ! NEEDLEAF DECIDUOUS TREES
+  6    67.0   ! BROADLEAF TREES WITH GROUNDCOVER (SAVANA)
+  7    50.0   ! GROUNDCOVER - SHORT VEGETATION/C4 GRASSLAND
+  8    63.0   ! BROADLEAF SHRUBS WITH GROUNDCOVER
+  9   100.0   ! BROADLEAF SHRUBS WITH BARE SOIL
+ 10   100.0   ! DWARF TREES AND SHRUBS (TUNDRA)
+ 11   100.0   ! BARE SOIL
+ 12    50.0   ! CROPLAND SOJA
+ 13   100.0   ! eucalipto carneiro et al. 2008
+ 14   100.0   ! Mata altlantica (kuntschik, 2004)
+ 15    50.0   ! CROPLAND MOSAIC 
+ 16     0.0   ! WATER
+CM Capacidade maxima do dossel em Ubarana (1996) - MOSES MODEL
+  1    1.03  ! ÁRVORES LATOFOLIADAS PERENES (FLORESTAS TROPICAIS)
+  2     0.6  ! ÁRVORES LATIFOLIASDAS DECIDUAS
+  3    0.95  ! ÁRVORES LATIFOLIADAS /ACICULADAS (FLORESTAS MISTA)
+  4     0.7  ! ÁRVORES ACICULADAS DECÍDUAS
+  5    0.85  ! ÁRVORES ACICULADAS PERENES
+  6    0.85  ! ÁRVORES LATIFOLIADAS COM COBERTURA ARBUSTIVA/HERBÁCEA (SAVANA)
+  7     0.5  ! GRAMÍNEAS E HERBÁCEAS
+  8    0.85  ! ARBUSTOS LATOFOLIADOS COM COBERTURA HERBÁCEA PERENE
+  9     1.0  ! ARBUSTOS LATIFOLIAOS COM SOLO EXPOSTO
+ 10     0.7  ! ÁRVORES ANÃAS E ARBUSTOS COM COBERTURA HERBÁCEAS (TUNDRA)
+ 11     0.5  ! SOLO EXPOSTO
+ 12     0.8  ! CULTIVOS (sOJA
+ 13    0.42  ! eucalipto, steidle neto et al. 2012
+ 14    0.54  ! Mata Atlantica Arcova et al.2003
+ 12     0.5  ! CULTIVOS (cropland mosaic)
+ 15     0.0  ! agua
+
+
+
+
+
+
+
+
+resistencia superficial (s/m) CLM MODEL
+  1   150.0   ! BROADLEAF EVERGREEN TREES
+  2   150.0   ! BROADLEAF DECIDUOUS TREES
+  3   150.0   ! BROADLEAF AND NEEDLEAF TREES
+  4   150.0   ! NEEDLEAF EVERGREEN TREES
+  5   150.0   ! NEEDLEAF DECIDUOUS TREES
+  6   138.0   ! BROADLEAF TREES WITH GROUNDCOVER (SAVANA)
+  7   130.0   ! GROUNDCOVER - SHORT VEGETATION/C4 GRASSLAND
+  8   150.0   ! BROADLEAF SHRUBS WITH GROUNDCOVER
+  9   150.0   ! BROADLEAF SHRUBS WITH BARE SOIL
+ 10   150.0   ! DWARF TREES AND SHRUBS (TUNDRA)
+ 11   150.0   ! BARE SOIL
+ 12   110.0   ! CROPLAND
+ 14   100.0   ! eucalipto carneiro et al. 2008
+ 15   150.0   ! Mata altlantica (mesmo de 1)  Mata atlantica ( a verificar ainda )******************** 
+ 14   110.0   ! CROPLAND MOSAIC
+ 13     0.0   ! WATER
+
+
+resistencia superficial (s/m) Sib Model
+  1   100.0   ! BROADLEAF EVERGREEN TREES
+  2   100.0   ! BROADLEAF DECIDUOUS TREES
+  3   100.0   ! BROADLEAF AND NEEDLEAF TREES
+  4   100.0   ! NEEDLEAF EVERGREEN TREES
+  5   100.0   ! NEEDLEAF DECIDUOUS TREES
+  6    67.0   ! BROADLEAF TREES WITH GROUNDCOVER (SAVANA)
+  7    50.0   ! GROUNDCOVER - SHORT VEGETATION/C4 GRASSLAND
+  8    63.0   ! BROADLEAF SHRUBS WITH GROUNDCOVER
+  9   100.0   ! BROADLEAF SHRUBS WITH BARE SOIL
+ 10   100.0   ! DWARF TREES AND SHRUBS (TUNDRA)
+ 11   100.0   ! BARE SOIL
+ 12    50.0   ! CROPLAND SOJA
+ 13   100.0   ! eucalipto carneiro et al. 2008
+ 14   100.0   ! Mata altlantica (mesmo de 1)  Mata atlantica ( a verificar ainda )******************** 
+ 15    50.0   ! CROPLAND MOSAIC 
+ 16     0.0   ! WATER

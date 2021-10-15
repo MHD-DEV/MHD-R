@@ -1,0 +1,27 @@
+Parametros de escoamento IN-CELL das Sub-Bacias
+     10.00				 ! TSUB - TRANSMISSIVIDADE MAXIMA DE REFERENCIA M2/DIA
+       1.0				 ! MU - COEFICIENTE DE DECAIMENTO DA TRANSMISSIVIDADE COM A PROFUNDIDADE
+       1.0				 ! ALPHA - FATOR DE ANISOTROPIA DA CAMADA SUPERRIRO DO SOLO
+     100.0				 ! CS - COEFICIENTE DO RESERVATORIO LINEAR SIMPLES DO FLUXO SUP E SUBSUPERFICIAL
+       0.0     0.805     0.529           ! BC1,2,3 - Coeficientes para a largura do rio (m)
+     17.36 				 ! QMESP - vazao media espec. m2/s
+     Bacia        CB QB(M3/KM2)
+Bacia 1        159.2   0.02838       0.0  ! Ponte Alta
+Bacia 2        317.6   0.01878       0.0  ! Estrada do Cunha
+Bacia 3        161.8   0.01946       0.0  ! Jaguari
+Bacia 4        212.2   0.02153       0.0  ! Picada
+Bacia 5        220.8   0.01492       0.0  ! Sao Luiz do Paraitinga
+Bacia 6        140.1   0.02546       0.0  ! Manuel Duarte
+Bacia 7        195.8   0.01395       0.0  ! Dois Rios
+Bacia 8        253.3   0.01916       0.0  ! Sobragi
+Bacia 9        171.2   0.01606       0.0  ! Paraibuna
+Bacia 10       192.6   0.01579       0.0  ! Sta Branca
+Bacia 11       149.2   0.01707       0.0  ! Itaperuna
+Bacia 12       119.8   0.01469       0.0  ! Cardoso Moreira
+Bacia 13       140.1   0.01599       0.0  ! Sto Antonio de Padua II
+Bacia 14       170.2   0.01607       0.0  ! Funil
+Bacia 15       163.1   0.01688       0.0  ! Sta Cecilia
+Bacia 16       136.8   0.00684       0.0  ! Simplicio
+Bacia 17       168.3   0.01818       0.0  ! Ilha Pombo
+Bacia 18       239.7   0.01829       0.0  ! Itaocara
+Bacia 19       196.5   0.01238       0.0  ! Campos - Ponte Municipal

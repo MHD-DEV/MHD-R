@@ -1,14 +1,14 @@
     !PROGRAM MHD-FL
 	!******************************************************************
-	!*********MODELO HIDROLÓGICO DISTRIBUÍDO - ROUTING*****************
+	!*********MODELO HIDROLï¿½GICO DISTRIBUï¿½DO - ROUTING*****************
 	!******************************************************************
 	!*		    Baseado no modelo MGB do                              *
-	!*			Instituto de Pesquisas Hidráulicas                    *
+	!*			Instituto de Pesquisas Hidrï¿½ulicas                    *
 	!*          desenvolvido pelo INPE                                *
 	!******************************************************************
 	!USE PORTLIB !biblioteca para calcular o tempo de processamento
-	USE VARS_MAIN !módulo que contém as variáveis principais
-!	USE VARS_CALIB !módulo que contém as variáveis da calibração
+	USE VARS_MAIN !mï¿½dulo que contï¿½m as variï¿½veis principais!
+!	USE VARS_CALIB !mï¿½dulo que contï¿½m as variï¿½veis da calibraï¿½ï¿½o
 	IMPLICIT NONE
 	INTEGER JULDAY, K, IMC
 	INTEGER:: TEMPOI(3)=0, TEMPOF(3)=0
@@ -20,7 +20,8 @@
     
 	!____________LEITURA DE ARQUIVOS PRINCIPAIS________________
 	CALL LEFIX 	!SUBROTINA DE LEITURA DE PARAMETROS FIXOS
-    CALL ALLOCA_VARS(0) !ALLOCA VARIÁVEIS PRINCIPAIS
+    
+	CALL ALLOCA_VARS(0) !ALLOCA VARIï¿½VEIS PRINCIPAIS
     
 	IDINI=JULDAY(IMES,IDIA,IANO,CALENDAR) !CONVERTE O DIA DE INICIO EM CALENDARIO JULIANO
 	
@@ -30,18 +31,29 @@
 	!___________FIM DA LEITURA DOS ARQUIVOS PRINCIPAIS ______________
 
 	!_______________PREPARACAO DE DADOS_____________________
-	CALL PARCEL !CALCULA ALGUNS PARÂMETROS DAS CÉLULAS E DO RIO
+	CALL PARCEL !CALCULA ALGUNS PARï¿½METROS DAS Cï¿½LULAS E DO RIO
 	CALL PARCUNGE !CALCULA PARAMETROS PARA PROPAGACAO MUSKINGUM-CUNGE
 	!____________FIM DA PREPARACAO DE DADOS_____________________
-    !____________INICIO DA SIMULA‚ÌO_______________
-    WRITE(*,*)
-	WRITE(*,*)' FAZENDO SIMULACAO'
-	WRITE(*,*)
-	CALL SIMULA
+    !____________INICIO DA SIMULAï¿½ï¿½O_______________
+	WRITE(*,*) "ICALIB:",ICALIB
+ 	CALIBRA_CASE: SELECT CASE(ICALIB)
+	CASE(0)
+    	WRITE(*,*)
+		WRITE(*,*)' FAZENDO SIMULACAO'
+		WRITE(*,*)
+		CALL SIMULA
+	CASE(1)
+		WRITE(*,*)
+		WRITE(*,*)' FAZENDO CALIBRACAO'
+		WRITE(*,*)
+		CALL LEQOBS	!LEITURA DE DADOS DE VAZAO OBSERVADA
+		CALL CALIBRA
+	CASE DEFAULT
+		STOP "ERRO: ICALIB DESCONHECIDO NO PROGRAMA PRINCIAPL!"
+	END SELECT CALIBRA_CASE
 	
-
-	CALL ALLOCA_VARS(1) !DEALLOCA VARIÁVEIS PRINCIPAIS
-
+	CALL ALLOCA_VARS(1) !DEALLOCA VARIï¿½VEIS PRINCIPAIS
+	pause
 	WRITE(*,*)'PROGRAMA TERMINOU'
 !	PAUSE
 !	STOP

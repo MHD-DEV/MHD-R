@@ -1,0 +1,117 @@
+      maxn     kstop    pcento       ngs     iseed    ideflt
+     10000         5     0.001        10         1         0
+IF ideflt IS EQUAL TO 1, READ THE SCE CONTROL PARAMETERS; ELSE SCE PARAMETERS ARE SET TO DEFAULT
+       npg       nps      nspl     mings    iniflg    iprint   - SCE PARAMETERS            
+        21        11        21         3         1         0
+     BACIA     POSTO  (BACIA A SER CALIBRADA E POSTO USADO NA CALIBRACAO)
+     IBCAL     NBVFO
+         3         3
+       DCS       DCB
+         1         1
+VALOR MINIMO E MAXIMO DE CADA PARAMETROS A SER CALIBRADO
+    0.0001     0.001
+       500         5
+
+
+
+
+V.  Input Summary for SCEIN.DAT:
+================================
+
+Card  Format  Cols                    Contents
+----  ------  ----                    --------
+
+1     i5      1-5   MAXN
+                    Maximum number of trials allowed before
+                    optimization is terminated.  The purpose of
+                    MAXN is to stop an optimization search before
+                    too much computer time is expended.  MAXN
+                    should be set large enough so that optimization
+                    is generally completed before MAXN trials are
+                    performed.
+                    Recommended value is 10,000 (increase or
+                    decrease as necessary).
+
+      i5      6-10  KSTOP
+                    Number of shuffling loops in which the 
+                    criterion must improve by the specified
+                    percentage or else optimization will be
+                    terminated.
+                    Recommended value: 5.
+
+      f5.2    11-15 PCENTO
+                    Percentage by which the criterion value must
+                    change in the specified number of shuffling 
+                    loops or else optimization is terminated
+                    (Use decimal equivalent: Percentage/100).
+                    Recommended value: 0.01.
+
+      i5      16-20 NGS
+                    Number of complexes used for optimization
+                    search.  Minimum value is 1.
+                    Recommended value is between 2 and 20 depending
+                    on the number of parameters to be optimized and
+                    on the degree of difficulty of the problem.
+
+      i5      21-25 ISEED
+                    Random seed used in optimization search.  Enter
+                    any integer number.  Default value (=1969) is
+                    assumed if this field is left blank.
+                    Recommended value: any large integer.
+
+      i5      26-30 IDEFLT
+                    Flag for setting the control variables of the
+                    SCE-UA algorithm.  Enter '0' or leave the field
+                    blank for default setting.  Enter '1' for user
+                    specified setting.
+                    If option '1' is chosen, type the following
+                    input card.  Else, leave the next card blank.
+
+2     i5      1-5   NPG
+                    Number of points in each complex.  NPG should
+                    be greater than or equal to 2.  The default
+                    value is equal to (2 * number of optimized
+                    parameters + 1).
+
+      i5      6-10  NPS
+                    Number of points in each sub-complex.  NPS
+                    should be greater than or equal to 2 and less
+                    than NPG.  The default value is equal to 
+                    (number of optimized parameters + 1).
+
+      i5      11-15 NSPL
+                    Number of evolution steps taken by each complex
+                    before next shuffling.  Default value is equal
+                    to NPG.
+
+      i5      16-20 MINGS
+                    Minimum number of complexes required for
+                    optimization search, if the number of complexes
+                    is allowed to reduce as the optimization search
+                    proceeds.  The default value is equal to NGS.
+
+      i5      21-25 INIFLG
+                    Flag on whether to include the initial point in
+                    the starting population (see Card 3, Field 1
+                    below).  Enter '1' if the initial point is to be
+                    included.  The default value is equal to '0'.
+
+      i5      26-30 IPRINT
+                    Print-out control flag.  Enter '0' to print out
+                    the best estimate of the global optimum at the
+                    end of each shuffling loop.  Enter '1' to print
+                    out every point in the entire sample population
+                    at the end of each shuffling loop.  The default
+                    value is equal to 0.
+
+3*    f10.3   1-10  Initial estimate of the parameter to be 
+                    optimized (used if INIFLG = 1 in Card 2 above).
+
+      f10.3   11-20 Lower bound of the parameter to be optimized.
+
+      f10.3   21-30 Upper bound of the parameter to be optimized.
+
+ *    Repeat Card 3 as many times as necessary until all parameters
+      to be optimized are defined.
+
+

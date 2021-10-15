@@ -1,0 +1,72 @@
+          SHUFFLED COMPLEX EVOLUTION GLOBAL OPTIMIZATION
+          ==============================================
+
+
+          READ AND WRITE THE INPUT INFORMATION FOR HYDROLOGICAL MODEL
+          ===========================================================
+
+
+SUBBACIA A SER OTIMIZADA:              3
+
+POSTO UTILIZADO NA OTIMIZACAO:         3
+
+
+INITIAL PARAMETER VALUES:
+
+        D1        D2        D3      DKSS     DTSUB       DMU    DALPHA      DCSI       DCS       DCB
+    0.0885    0.5904    0.0011   23.8966    0.0045    1.3178    1.0000    0.0046  204.3629    0.0029
+
+
+THE PARAMETERS TO BE OPTIMIZED:
+
+       DCS       DCB
+
+
+  SCE CONTROL     MAX TRIALS     REQUIRED IMPROVEMENT     RANDOM
+   PARAMETER        ALLOWED      PERCENT    NO. LOOPS      SEED
+  -----------     ----------     -------    ---------     ------
+    DEFAULT         10000          0.1          5             1
+
+
+                  SCE ALGORITHM CONTROL PARAMETERS
+                  ================================
+
+  NUMBER OF     POINTS PER     POINTS IN      POINTS PER    EVOL. STEPS
+  COMPLEXES      COMPLEX      INI. POPUL.     SUB-COMPLX    PER COMPLEX
+  ---------     ----------    -----------     ----------    -----------
+     10              5             50              3              5
+
+
+               COMPLX NO.     MIN COMPLEX     INI. POINT
+               REDUCTION      NO. ALLOWED      INCLUDED
+               ----------     -----------     ----------
+                  NO              10             NO  
+
+
+        INITIAL PARAMETER VALUES AND PARAMETER BOUNDS
+        =============================================
+
+  PARAMETER     INITIAL VALUE     LOWER BOUND     UPPER BOUND
+  ---------     -------------     -----------     -----------
+     DCS            204.3629          0.0001        500.0000
+     DCB              0.0029          0.0010          5.0000
+
+
+  ==================================================
+  ENTER THE SHUFFLED COMPLEX EVOLUTION GLOBAL SEARCH
+  ==================================================
+
+
+*** PRINT THE INITIAL POINT AND ITS CRITERION VALUE ***
+
+ CRITERION       DCS       DCB      R2    NASH   LNASH
+ -----------------------------------------------------
+ 0.720E+05  204.3629    0.0029    0.00   -0.05   -5.15
+
+
+ *** PRINT THE RESULTS OF THE SCE SEARCH ***
+
+ LOOP TRIALS COMPLXS  BEST F   WORST F  PAR RNG         DCS       DCB      R2    NASH   LNASH
+    0    50      10 0.595E+05 0.722E+05 0.948        0.0027    0.0015    0.00   -0.20   -3.83
+    1   106      10 0.595E+05 0.720E+05 0.932        0.0003    0.0012    0.00   -0.14   -4.23
+    2   174      10 0.595E+05 0.720E+05 0.920        0.0003    0.0010    0.00   -0.20   -3.74

@@ -1,0 +1,7 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Wed Aug 17 09:57:05 2016
+        MODULE LEQOBS__genmod
+          INTERFACE 
+            SUBROUTINE LEQOBS
+            END SUBROUTINE LEQOBS
+          END INTERFACE 
+        END MODULE LEQOBS__genmod

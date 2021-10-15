@@ -1,0 +1,45 @@
+ARQUIVO DE INFORMACOES GERAIS DO MODELO DE GRANDES BACIAS                                                      
+                                                                              
+APLICACAO NA BACIA DO RIO PARAIBA DO SUL                                                                       
+    
+       DIA       MES       ANO      HORA       INICIO DA SIMULACAO
+        30        12      1959        21 
+    
+       DIA       MES       ANO      HORA       FIM DA SIMULACAO
+        29        12      2005        21 
+          
+        DT       NUMERO DE INTERVALOS DE TEMPO E TAMANHO DO INTERVALO EM SEGUNDOS
+     10800.
+         
+        NC        NU        NB      NUMERO DE CELULAS, USOS E BACIAS
+      1948        14        19      
+          
+    ICALIB: SIMULACAO (0), CALIBRACAO (1), PREVISAO (2) ou Monte carlo (3)
+         0
+
+       DIA       MES       ANO      HORA       FIM DA SIMULACAO P/ PREVISAO
+        31        12      2013         0   	                 
+      
+NUMERO DE PONTOS
+19 QOBS_2000-2013.prn
+
+CELULAS QUE CORRESPONDEM A ESTES PONTOS                             
+9	      	        ! 1 - PONTE ALTA 1
+37	                ! 2 - ESTRADA DO CUNHA
+82                  	! 3 - JAGUARI
+141			! 4 - PICADA
+182			! 5 - SAO LUIZ DO PARAITINGA
+288			! 6 - MANUEL DUARTE
+396			! 7 - DOIS RIOS
+466			! 8 - SOBRAGI
+538             	! 9 - PARAIBUNA
+560			!10 - SANTA BRANCA
+760			!11 - ITAPERUNA
+810			!12 - CARDOSO MOREIRA
+1091			!13 - SANTO ANTONIO DE PADUA II
+1350			!14 - FUNIL
+1452                	!15 - SANTA CECILIA
+1712                	!16 - SIMPLICIO
+1786                	!17 - ILHA DOS POMBOS
+1824                	!18 - ITAOCARA
+1948                	!19 - CAMPOS

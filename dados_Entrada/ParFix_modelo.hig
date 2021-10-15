@@ -1,0 +1,77 @@
+Arquivo de informacoes gerais do MHD-INPE                                                      
+                                                                              
+Aplicacao na bacia do rio xingu                                                                       
+    
+       dia       mes       ano      hora    data inicio prec.bin, met.bin e qobs.prn
+        01        01      1980         0
+    
+       dia       mes       ano      hora    data final prec.bin, met.bin e qobs.prn
+        31        12      1990         0
+       
+       dia       mes       ano      hora    inicio da simulacao/calibracao
+        01        01      1980         0
+    
+       dia       mes       ano      hora    fim da simulacao/calibracao
+        31        12      1990         0
+
+    iniaju: numero de dias a serem desconsiderados no calculo das fobjs
+       365
+          
+        dt       tamanho do intervalo de tempo em segundos
+    86400.
+         
+        nc        nu        nb      numero de celulas, usos e bacias
+      3968         8        13
+          
+    icalib: simulacao (0), calibracao (1) ou previsao (2)
+         1
+
+       dia       mes       ano      hora       fim da previsao
+        04        03      2005         0   	                 
+      
+numero da bacia para a qual se deseja imprimir os resultados das funcoes objetivo                         
+ 3
+                            
+numero de postos com vazao observada, nome do arquivo em que estao os dados                            
+ 13     qobs.prn
+
+numeros das celulas que correspondem aos postos flu com dados
+101 203 307 406 701 1051 1534 1758 3297 3397 3563 3883 3968
+                  
+numero de pontos em que se deseja gravar hidrogramas
+ 13
+         
+celulas que correspondem a estes pontos
+101       ! 
+203       ! 
+307       ! 
+406       ! 
+701       ! 
+1051      ! 
+1534      ! 
+1758
+3297
+3397
+3563
+3883
+3968
+
+numero de mapas de URHs (minimo 1)
+1
+        
+intervalo de tempo dos mapas de uso da terra em sequencia                       
+o primeiro URH.hig e lido no primeiro passo de tempo
+15/08/1979 URH_1979.hig
+      
+numero de celulas onde a vazao calc deve ser subst. pela vazao lida de arquivo e nome do arquivo
+0  qsubst.prn
+
+celulas cuja vazao sera substituida
+0
+
+calcular balanco hidrico(opcoes: 1=sim, 0=nao)
+1
+mes inicial e final do ano hidrologico
+10 09 !setembro e agosto
+
+

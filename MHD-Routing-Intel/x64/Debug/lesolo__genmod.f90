@@ -1,0 +1,7 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Wed Aug 17 09:57:12 2016
+        MODULE LESOLO__genmod
+          INTERFACE 
+            SUBROUTINE LESOLO
+            END SUBROUTINE LESOLO
+          END INTERFACE 
+        END MODULE LESOLO__genmod
